@@ -1,0 +1,111 @@
+/*设置背景色*/
+body {
+    background-color: #ffffff;
+}
+
+/*画梯形*/
+.trapezoid {
+    height: 0;
+    text-align: center;
+    padding-top: 5px;
+    width: 180px;
+    border-top-left-radius: 15px;
+    border-bottom: 80px solid #e6e6e6;
+    border-right: 60px solid transparent;
+}
+
+/*LED 最外层 样式*/
+.LEDDIV {
+    width: 1890px;
+    height: 500px;
+    background-color: #e6e6e6;
+    border: 1px solid #000000;
+}
+
+/*LED灯模型设计*/
+.LEDMode {
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 205px;
+    height: 130px;
+    background-color: #D7D7D7;
+    border: 1px solid #000000;
+}
+
+/*LED灯闪烁边框界面*/
+.LEDColorBorder {
+    margin-top: 5px;
+    margin-left: 8px;
+    width: 80px;
+    height: 80px;
+    background-color: #D7D7D7;
+    border: 2px solid #999999;
+    border-radius: 10px;
+}
+
+/*LED灯闪烁颜色界面*/
+.LEDColor_green {
+    border-radius: 10px;
+    margin: 4px 4px 3px 3px;
+    width: 70px;
+    height: 70px;
+    background-color: green;
+    border: 1px solid #000000;
+}
+
+/*LED 分隔线 直线*/
+.LEDColor_line {
+    border-top: 1px solid #999999;
+    margin-top: 3px;
+    margin-left: 6px;
+    width: 185px;
+    margin-bottom: -6px;
+}
+
+/*LED灯复选框层*/
+.LEDBottomDIV {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*LED CheckBox 与 编号 之间的竖线*/
+.LEDCheckBox_line {
+    height: 25px;
+    width: 1px;
+    margin-left: 8px;
+    border-left: 1px solid #999999;
+}
+
+/*编号样式*/
+.LEDNum {
+    margin-bottom: 15px;
+    background-color: #e6e6e6;
+    margin-left: 8px;
+    width: 100px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/*LED灯编辑按钮*/
+.LEDEdit {
+    font-size: 2px;
+    margin-left: 5px;
+    border: 1px solid #999999;
+    background-color: #e6e6e6;
+    width: 45px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+/*LED 数字显示  这个界面是放在灯数字显示的 外面*/
+.LEDNum_Show {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 100px;
+    height: 80px;
+    background-color: #D7D7D7;
+    border: 2px solid #999999;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+}

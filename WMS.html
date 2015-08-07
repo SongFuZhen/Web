@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>WMS</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Other.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/BootStrap_changed.css">
+    <script type="text/javascript" src="./JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./JS/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<!-- 添加导航条-->
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <!--标签，可以放置企业标签-->
+        <div class="navbar-header">
+            <img src="./img/icon.png" style="width:60px;height: 60px;">
+        </div>
+        <!--导航条项目 主要使用bootstrap的一些样式-->
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a type="button" href="#" class="btn btn-default">首页</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">面板<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">需求</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">择货</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" class="btn btn-default">通知面板</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                        择货流程<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">择货单</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">择货单项目</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                        要货流程<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">需求单</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">需求单项目</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                        发运流程<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">运单</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">托盘</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">包装箱</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                        库存管理<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">详细库存查询</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">库存汇总查询</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">库存文件导入</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">文件移库</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">库存移动记录查询</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                        材料盘点<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">盘点清单</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                        报表<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">收发货报表</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">收发货差异报表</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">要货报表</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                        报废生成<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">报废单</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">报废项</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                        管理<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">员工</a></li>
+                        <li><a href="#">地点</a></li>
+                        <li><a href="#">仓库</a></li>
+                        <li><a href="#">库位</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">零件类型</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">零件</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">员工择货规则</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">协调器</a></li>
+                        <li><a href="./Management/LED.html">LED</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                        应急处理<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">导入发运数据</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">导入接收数据</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                        配置<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">正则规范配置</a></li>
+                        <li><a href="#">标签配置</a></li>
+                        <li><a href="#">同步配置</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">系统配置</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">LED配置</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-danger" type="button"> 注销 </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!--主界面设计部分-->
+</body>
+</html>
