@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../CSS/BootStrap_changed.css">
     <script type="text/javascript" src="../JS/bootstrap.min.js"></script>
     <script type="text/javascript" src="../JS/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../JS/Other.js"></script>
 </head>
 <body>
 <!-- 添加导航条-->
@@ -15,14 +16,15 @@
     <nav class="navbar navbar-default" role="navigation">
         <!--标签，可以放置企业标签-->
         <div class="navbar-header">
-            <img src="../img/icon.png" style="width:60px;height: 60px;">
+            <img src="../img/icon.png" style="width:60px;height: 50px;">
         </div>
         <!--导航条项目 主要使用bootstrap的一些样式-->
         <div>
             <ul class="nav navbar-nav">
-                <li><a type="button" href="../WMS.html" class="btn btn-default">首页</a></li>
+                <li><a type="button" href="../WMS.html">首页</a>
+                </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">面板<span
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">面板<span
                             class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">需求</a></li>
@@ -31,10 +33,10 @@
                     </ul>
                 </li>
 
-                <li><a href="#" class="btn btn-default">通知面板</a></li>
+                <li><a href="#">通知面板</a></li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         择货流程<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -45,7 +47,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         要货流程<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -56,7 +58,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle " data-toggle="dropdown">
                         发运流程<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -69,7 +71,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle  " data-toggle="dropdown">
                         库存管理<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -86,7 +88,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle  " data-toggle="dropdown">
                         材料盘点<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -95,7 +97,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle " data-toggle="dropdown">
                         报表<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -108,7 +110,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         报废生成<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -120,7 +122,7 @@
 
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle" style="background-color: #e6e6e6;" data-toggle="dropdown">
                         管理<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -136,12 +138,12 @@
                         <li><a href="#">员工择货规则</a></li>
                         <li class="divider"></li>
                         <li><a href="#">协调器</a></li>
-                        <li><a href="./Management/LED.html">LED</a></li>
+                        <li><a href="#">LED</a></li>
                     </ul>
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         应急处理<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -152,7 +154,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         配置<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -166,7 +168,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="btn btn-danger" type="button"> 注销 </a>
+                    <a href="#" type="button"> 注销 </a>
                 </li>
             </ul>
         </div>
@@ -174,16 +176,11 @@
 </div>
 
 <!--主界面部分-->
-<div class="container">
-
-
-</div>
-
 <!--表格之上的部分-->
 <div class="container">
     <div class="trapezoid">
         <!--为了使字体能够居中显示，设置padding-top 属性-->
-        <h4 style="padding-top: 25px;">LED列表</h4>
+        <h4>LED列表</h4>
     </div>
     <!--信息部分-->
     <div>
@@ -214,20 +211,18 @@
             <hr class="line">
 
             <div class="form-group">
-                <!--添加一个空白，占一个栅格的位置，使之右移-->
+                <!--占空位-->
                 <div class="col-sm-1"></div>
-
                 <div class="col-sm-2">
-                    <!--排版-->
-                    <input type="checkbox">&nbsp;全选 &emsp;
+                    <input type="checkbox">&nbsp;全选&emsp;
                     <button type="button" class="btn btn-danger">删除</button>
                 </div>
 
-                <div class="col-sm-1">
+                <div class="col-sm-2">
                     <button type="button" class="btn btn-primary">新建LED</button>
                 </div>
 
-                <div class="col-sm-1">
+                <div class="col-sm-2">
                     <button type="button" class="btn btn-primary">上传/更新LED</button>
                 </div>
 
@@ -235,11 +230,11 @@
                     <button type="button" class="btn btn-primary">下载</button>
                 </div>
 
-                <div class="col-sm-2"></div>
-                <label for="LEDNum" class="col-sm-2 control-label">LED灯数量：</label>
+                <div class="col-sm-1" style="text-align: right;">
+                    <label for="LEDNum" class="control-label">LED灯数量：</label></div>
 
-                <div class="col-sm-1">
-                    <input type="text" class="form-control" id="LEDNum" disabled="disabled">
+                <div class="col-sm-1" style="text-align: left;">
+                    <input type="text" class="form-control" id="LEDNum" disabled="disabled" value="300">
                 </div>
 
             </div>
@@ -250,33 +245,8 @@
 <!--灯显示部分-->
 <div class="container">
     <!--这一层是整个最外层的背景-->
-    <div class="LEDDIV">
+    <div class="LEDDIV container">
         <div style="display: inline-flex">
-            <!--这一层是灯模型，第一个灯-->
-            <div class="LEDMode">
-                <div style="display: inline-flex">
-                    <!--这一层是灯的颜色外框-->
-                    <div class="LEDColorBorder">
-                        <!--这一层是灯的颜色显示   此处为绿色-->
-                        <div class="LEDColor_green"></div>
-                    </div>
-                    <input type="text" class="LEDNum_Show" disabled="disabled" value="99 99">
-                </div>
-                <!--这个显示灯跟下面 的分隔线-->
-                <p class="LEDColor_line"></p>
-
-                <div class="LEDBottomDIV" style="display:inline-flex;">
-                    <input type="checkbox" class="checkbox" style="width: 10px;">
-
-                    <p class="LEDCheckBox_line"></p>
-                    <input type="text" disabled="disabled" value="编号：ABCD" class="LEDNum">
-
-                    <p class="LEDCheckBox_line"></p>
-
-                    <button class="LEDEdit btn-default">编辑</button>
-                </div>
-            </div>
-
 
             <!--这一层是灯模型，第一个灯-->
             <div class="LEDMode">
@@ -286,251 +256,125 @@
                         <!--这一层是灯的颜色显示   此处为绿色-->
                         <div class="LEDColor_green"></div>
                     </div>
+                    <!--此处获取输入值-->
                     <input type="text" class="LEDNum_Show" disabled="disabled" value="99 99">
                 </div>
                 <!--这个显示灯跟下面 的分隔线-->
                 <p class="LEDColor_line"></p>
-
+                <!--div之间水平排列-->
                 <div class="LEDBottomDIV" style="display:inline-flex;">
-                    <input type="checkbox" class="checkbox" style="width: 10px;">
-
-                    <p class="LEDCheckBox_line"></p>
-                    <input type="text" disabled="disabled" value="编号：ABCD" class="LEDNum">
+                    <input type="checkbox" class="checkbox">
 
                     <p class="LEDCheckBox_line"></p>
 
-                    <button class="LEDEdit btn-default">编辑</button>
+                    <p class="h5">编号:</p>
+                    <input type="text" value="ABCD" class="LEDNum">
+
+                    <p class="LEDCheckBox_line"></p>
+                    <button class="LEDEdit">完成</button>
+                </div>
+                <div class="LEDNum_Detail">
+                    库位：<input id="Detail_Libray1" value="ABCD" class="LEDNum"> <br>
+                    MAC号：<input id="Detail_MAC1" value="ABCD" class="LEDNum"> <br>
+                    协调器号：<input id="Detail_Coordinator1" value="ABCD" class="LEDNum">
                 </div>
             </div>
 
 
-            <!--这一层是灯模型，第一个灯-->
+            <!--这一层是灯模型，第二个灯-->
             <div class="LEDMode">
                 <div style="display: inline-flex">
                     <!--这一层是灯的颜色外框-->
                     <div class="LEDColorBorder">
-                        <!--这一层是灯的颜色显示   此处为绿色-->
-                        <div class="LEDColor_green"></div>
+                        <!--这一层是灯的颜色显示   此处为呼吸灯-->
+                        <div class="keyframes_breath"></div>
                     </div>
+                    <!--此处获取输入值-->
                     <input type="text" class="LEDNum_Show" disabled="disabled" value="99 99">
                 </div>
                 <!--这个显示灯跟下面 的分隔线-->
                 <p class="LEDColor_line"></p>
 
                 <div class="LEDBottomDIV" style="display:inline-flex;">
-                    <input type="checkbox" class="checkbox" style="width: 10px;">
-
-                    <p class="LEDCheckBox_line"></p>
-                    <input type="text" disabled="disabled" value="编号：ABCD" class="LEDNum">
+                    <input type="checkbox" class="checkbox">
 
                     <p class="LEDCheckBox_line"></p>
 
-                    <button class="LEDEdit btn-default">编辑</button>
+                    <p class="h5">编号:</p>
+                    <input type="text" value="ABCD" class="LEDNum">
+
+                    <p class="LEDCheckBox_line"></p>
+                    <button class="LEDEdit">完成</button>
+                </div>
+                <div class="LEDNum_Detail">
+                    库位：<input id="Detail_Libray2" value="ABCD" class="LEDNum"> <br>
+                    MAC号：<input id="Detail_MAC2" value="ABCD" class="LEDNum"> <br>
+                    协调器号：<input id="Detail_Coordinator2" value="ABCD" class="LEDNum">
                 </div>
             </div>
 
 
-            <!--这一层是灯模型，第一个灯-->
+            <!--这一层是灯模型，第三个灯-->
             <div class="LEDMode">
                 <div style="display: inline-flex">
                     <!--这一层是灯的颜色外框-->
                     <div class="LEDColorBorder">
-                        <!--这一层是灯的颜色显示   此处为绿色-->
-                        <div class="LEDColor_green"></div>
+                        <!--这一层是灯的颜色显示   此处为呼吸灯-->
+                        <div class="breathe-btn"></div>
                     </div>
+                    <!--此处获取输入值-->
                     <input type="text" class="LEDNum_Show" disabled="disabled" value="99 99">
                 </div>
                 <!--这个显示灯跟下面 的分隔线-->
                 <p class="LEDColor_line"></p>
 
                 <div class="LEDBottomDIV" style="display:inline-flex;">
-                    <input type="checkbox" class="checkbox" style="width: 10px;">
-
-                    <p class="LEDCheckBox_line"></p>
-                    <input type="text" disabled="disabled" value="编号：ABCD" class="LEDNum">
+                    <input type="checkbox" class="checkbox">
 
                     <p class="LEDCheckBox_line"></p>
 
-                    <button class="LEDEdit btn-default">编辑</button>
+                    <p class="h5">编号:</p>
+                    <input type="text" value="ABCD" class="LEDNum">
+
+                    <p class="LEDCheckBox_line"></p>
+                    <button class="LEDEdit">完成</button>
+                </div>
+                <div class="LEDNum_Detail">
+                    库位：<input id="Detail_Libray3" value="ABCD" class="LEDNum"> <br>
+                    MAC号：<input id="Detail_MAC3" value="ABCD" class="LEDNum"> <br>
+                    协调器号：<input id="Detail_Coordinator3" value="ABCD" class="LEDNum">
                 </div>
             </div>
 
 
-            <!--这一层是灯模型，第一个灯-->
-            <div class="LEDMode">
-                <div style="display: inline-flex">
-                    <!--这一层是灯的颜色外框-->
-                    <div class="LEDColorBorder">
-                        <!--这一层是灯的颜色显示   此处为绿色-->
-                        <div class="LEDColor_green"></div>
-                    </div>
-                    <input type="text" class="LEDNum_Show" disabled="disabled" value="99 99">
-                </div>
-                <!--这个显示灯跟下面 的分隔线-->
-                <p class="LEDColor_line"></p>
-
-                <div class="LEDBottomDIV" style="display:inline-flex;">
-                    <input type="checkbox" class="checkbox" style="width: 10px;">
-
-                    <p class="LEDCheckBox_line"></p>
-                    <input type="text" disabled="disabled" value="编号：ABCD" class="LEDNum">
-
-                    <p class="LEDCheckBox_line"></p>
-
-                    <button class="LEDEdit btn-default">编辑</button>
-                </div>
-            </div>
-
-            <!--这一层是灯模型，第一个灯-->
-            <div class="LEDMode">
-                <div style="display: inline-flex">
-                    <!--这一层是灯的颜色外框-->
-                    <div class="LEDColorBorder">
-                        <!--这一层是灯的颜色显示   此处为绿色-->
-                        <div class="LEDColor_green"></div>
-                    </div>
-                    <input type="text" class="LEDNum_Show" disabled="disabled" value="99 99">
-                </div>
-                <!--这个显示灯跟下面 的分隔线-->
-                <p class="LEDColor_line"></p>
-
-                <div class="LEDBottomDIV" style="display:inline-flex;">
-                    <input type="checkbox" class="checkbox" style="width: 10px;">
-
-                    <p class="LEDCheckBox_line"></p>
-                    <input type="text" disabled="disabled" value="编号：ABCD" class="LEDNum">
-
-                    <p class="LEDCheckBox_line"></p>
-
-                    <button class="LEDEdit btn-default">编辑</button>
-                </div>
-            </div>
-
-            <!--这一层是灯模型，第一个灯-->
-            <div class="LEDMode">
-                <div style="display: inline-flex">
-                    <!--这一层是灯的颜色外框-->
-                    <div class="LEDColorBorder">
-                        <!--这一层是灯的颜色显示   此处为绿色-->
-                        <div class="LEDColor_green"></div>
-                    </div>
-                    <input type="text" class="LEDNum_Show" disabled="disabled" value="99 99">
-                </div>
-                <!--这个显示灯跟下面 的分隔线-->
-                <p class="LEDColor_line"></p>
-
-                <div class="LEDBottomDIV" style="display:inline-flex;">
-                    <input type="checkbox" class="checkbox" style="width: 10px;">
-
-                    <p class="LEDCheckBox_line"></p>
-                    <input type="text" disabled="disabled" value="编号：ABCD" class="LEDNum">
-
-                    <p class="LEDCheckBox_line"></p>
-
-                    <button class="LEDEdit btn-default">编辑</button>
-                </div>
-            </div>
-
-            <!--这一层是灯模型，第一个灯-->
-            <div class="LEDMode">
-                <div style="display: inline-flex">
-                    <!--这一层是灯的颜色外框-->
-                    <div class="LEDColorBorder">
-                        <!--这一层是灯的颜色显示   此处为绿色-->
-                        <div class="LEDColor_green"></div>
-                    </div>
-                    <input type="text" class="LEDNum_Show" disabled="disabled" value="99 99">
-                </div>
-                <!--这个显示灯跟下面 的分隔线-->
-                <p class="LEDColor_line"></p>
-
-                <div class="LEDBottomDIV" style="display:inline-flex;">
-                    <input type="checkbox" class="checkbox" style="width: 10px;">
-
-                    <p class="LEDCheckBox_line"></p>
-                    <input type="text" disabled="disabled" value="编号：ABCD" class="LEDNum">
-
-                    <p class="LEDCheckBox_line"></p>
-
-                    <button class="LEDEdit btn-default">编辑</button>
-                </div>
-            </div>
-        </div>
-
-
-        <!--这一层是灯模型，第一个灯-->
-        <div class="LEDMode">
-            <div style="display: inline-flex">
-                <!--这一层是灯的颜色外框-->
-                <div class="LEDColorBorder">
-                    <!--这一层是灯的颜色显示   此处为绿色-->
-                    <div class="LEDColor_green"></div>
-                </div>
-                <input type="text" class="LEDNum_Show" disabled="disabled" value="99 99">
-            </div>
-            <!--这个显示灯跟下面 的分隔线-->
-            <p class="LEDColor_line"></p>
-
-            <div class="LEDBottomDIV" style="display:inline-flex;">
-                <input type="checkbox" class="checkbox" style="width: 10px;">
-
-                <p class="LEDCheckBox_line"></p>
-                <input type="text" disabled="disabled" value="编号：ABCD" class="LEDNum">
-
-                <p class="LEDCheckBox_line"></p>
-
-                <button class="LEDEdit btn-default">编辑</button>
-            </div>
-        </div>
-
-        <!--这一层是灯模型，第一个灯-->
-        <div class="LEDMode">
-            <div style="display: inline-flex">
-                <!--这一层是灯的颜色外框-->
-                <div class="LEDColorBorder">
-                    <!--这一层是灯的颜色显示   此处为绿色-->
-                    <div class="LEDColor_green"></div>
-                </div>
-                <input type="text" class="LEDNum_Show" disabled="disabled" value="99 99">
-            </div>
-            <!--这个显示灯跟下面 的分隔线-->
-            <p class="LEDColor_line"></p>
-
-            <div class="LEDBottomDIV" style="display:inline-flex;">
-                <input type="checkbox" class="checkbox" style="width: 10px;">
-
-                <p class="LEDCheckBox_line"></p>
-                <input type="text" disabled="disabled" value="编号：ABCD" class="LEDNum">
-
-                <p class="LEDCheckBox_line"></p>
-
-                <button class="LEDEdit btn-default">编辑</button>
-            </div>
         </div>
     </div>
+</div>
 </div>
 
 
 <!--翻页功能部分-->
-<div class="container" style="width: 400px;">
-    <nav class="navbar-default">
-        <ul class="pagination">
-            <li>
-                <a href="#" aria-label="Pre"><span aria-hidden="true">&laquo;</span></a>
-            </li>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#">7</a></li>
-            <li><a href="#">8</a></li>
-            <li><a href="#">9</a></li>
-            <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
-        </ul>
-    </nav>
-</div>
-
+<footer>
+    <div class="container" style="width: 400px;">
+        <!--设置背景颜色，使之为白色-->
+        <nav class="navbar-default" style="background-color: #ffffff;">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Pre"><span aria-hidden="true">&laquo;</span></a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
 </body>
 </html>

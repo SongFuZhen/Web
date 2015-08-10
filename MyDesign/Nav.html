@@ -2,28 +2,99 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>WMS</title>
-    <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/Other.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/BootStrap_changed.css">
-    <script type="text/javascript" src="./JS/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./JS/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
+    <script type="text/javascript" src="../JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../JS/jquery-2.1.4.min.js"></script>
+    <title>Navbar</title>
+
+    <style type="text/css">
+        /*使导航条可以下拉*/
+        .navbar .nav > li:hover .dropdown-menu {
+            display: block;
+            background-color: #ffffff;
+        }
+
+        /*此处修改分隔线颜色*/
+        .dropdown-menu .divider {
+            background-color: #999999;
+        }
+
+        /*将Bootstrap中的a标签进行修改，使之字体能够居中显示*/
+        .nav > li > a {
+            padding-top: 10px;
+        }
+
+        .navbar {
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 1px solid #999999;
+            background-color: #e6e6e6;
+        }
+
+        .square {
+            margin-top: 10px;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            margin-bottom: 10px;
+            vertical-align: middle;
+            background-color: #ffffff;
+            border: 1px solid #999999;
+            border-radius: 8px;
+            margin-left: 10px;
+        }
+    </style>
+    <!--使得导航条上的出现动画-->
+    <script type="text/javascript">
+        $(function () {
+//     Home  首页
+
+            $("#Home").mouseenter(function () {
+                $("#Home").animate({
+                    top: '5px'
+                });
+            });
+
+            $("#Home").mouseleave(function () {
+                $("#Home").animate({
+                    top: '0px'
+                });
+
+            });
+
+//面板
+            $("#mianban").mouseenter(function () {
+                $("#mianban").animate({
+                    backgroundColor: '#999999'
+                });
+            });
+
+            $("#mianban").mouseleave(function () {
+                $("#mianban").animate({
+                    backgroundColor: '#ffffff'
+                });
+            });
+        });
+
+    </script>
 </head>
 <body>
-<!-- 添加导航条-->
-<div class="container">
+
+<br>
+
+<div>
     <nav class="navbar navbar-default" role="navigation">
         <!--标签，可以放置企业标签-->
         <div class="navbar-header">
-            <img src="./img/icon.png" style="width:60px;height: 50px;">
+            <img src="../img/icon.png" style="width:70px;height: 60px;">
         </div>
         <!--导航条项目 主要使用bootstrap的一些样式-->
         <div>
             <ul class="nav navbar-nav">
-                <li><a type="button" href="#" style="background-color: #e6e6e6;">首页</a>
+                <li><a type="button" href="#" id="Home" class="square">首页</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">面板<span
+                    <a href="#" class="dropdown-toggle square" id="mianban" data-toggle="dropdown">面板<span
                             class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">需求</a></li>
@@ -32,10 +103,10 @@
                     </ul>
                 </li>
 
-                <li><a href="#">通知面板</a></li>
+                <li><a href="#" class="square">通知面板</a></li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle square" data-toggle="dropdown">
                         择货流程<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -45,8 +116,8 @@
                     </ul>
                 </li>
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle square" data-toggle="dropdown">
                         要货流程<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -57,7 +128,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle " data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle square" data-toggle="dropdown">
                         发运流程<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -70,7 +141,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle  " data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle square " data-toggle="dropdown">
                         库存管理<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -87,7 +158,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle  " data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle square " data-toggle="dropdown">
                         材料盘点<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -96,7 +167,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle " data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle square" data-toggle="dropdown">
                         报表<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -109,7 +180,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle  " data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle square " data-toggle="dropdown">
                         报废生成<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -121,7 +192,7 @@
 
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle  " data-toggle="dropdown">
+                    <a href="../Management/LED.html" class="dropdown-toggle  square" data-toggle="dropdown">
                         管理<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -142,7 +213,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle square" data-toggle="dropdown">
                         应急处理<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -153,7 +224,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle square" data-toggle="dropdown">
                         配置<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -167,13 +238,11 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" type="button"> 注销 </a>
+                    <a href="#" type="button" class="square" style="background-color: red;color: #ffffff;"> 注销 </a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
-
-<!--主界面设计部分-->
 </body>
 </html>

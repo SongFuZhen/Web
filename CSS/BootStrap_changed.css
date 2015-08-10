@@ -2,14 +2,14 @@
 
 .navbar .nav > li:hover .dropdown-menu {
     display: block;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
 }
 
 /*导航条高度*/
 .navbar {
-    background-color: #e6e6e6;
+    background-color: #f2f2f2;
     border: 1px solid #000000;
-    height: 55px;
+    /*height: 55px;*/
 }
 
 /*设置分隔线颜色*/
@@ -18,9 +18,8 @@
 }
 
 .btn {
-    width: 100px;
-    border: 1px solid #999999;
-    margin-right: 2px;
+    /*border: 1px solid #999999;*/
+    margin-right: 5px;
 }
 
 /*表格的边框*/
@@ -38,5 +37,25 @@
 
 /*表格  标题栏变色*/
 .table > thead {
+    width: auto;
     background-color: #FFFFCE;
+}
+
+/*使用footer将翻页固定在底部*/
+footer {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    height: 60px;
+    clear: both;
+}
+
+/*代码设置里面不同。注意h4跟 .h5区别*/
+h4 {
+    padding-top: 15px;
+}
+
+.h5 {
+    margin-left: 3px;
+    margin-top: 6px;
 }
