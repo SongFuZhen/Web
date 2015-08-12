@@ -1,0 +1,76 @@
+/*这部分是一些系统再带样式修改*/
+body {
+    background-color: #F2F2F2;
+}
+
+h2 {
+    /*设置标题颜色为灰色*/
+    color: #CCCCCC;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+h4 {
+    color: #CCCCCC;
+    margin-right: 10px;
+}
+
+h5 {
+    color: #CCCCCC;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+input[type="checkbox"] {
+    margin-top: 5%;
+}
+
+input {
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #999999;
+}
+
+/*这部分是BootStrap样式的修改*/
+.btn {
+    margin-left: 28%;
+    width: 40%;
+    background-color: transparent;
+    border: 1px solid #999999;
+    color: white;
+}
+
+/*这部分是自定义样式*/
+
+.LoginBody {
+    /*设置背景颜色为深蓝色*/
+    background-color: #424A5D;
+    /*设置透明度为80%*/
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+}
+
+/*居中显示一个Box*/
+.LoginBox {
+    position: absolute;
+    border: 2px solid #999999;
+    border-radius: 8px;
+    top: 28%;
+    left: 33%;
+    width: 34%;
+    height: 44%;
+}
+
+/*内容居中*/
+.LoginContent {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    position: relative;
+    display: inline-flex;
+    top: 45%;
+    left: 20%;
+    width: 60%;
+    height: 13%;
+}
+
