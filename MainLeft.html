@@ -3,26 +3,24 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>主界面</title>
-    <style type="text/css">
-        body {
-            background-color: #424A5D;
-        }
-    </style>
     <link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css">
-    <script type="text/javascript" src="JS/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/Main.css" type="text/css">
     <script type="text/javascript" src="JS/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JS/Main.js"></script>
 </head>
-<body>
-<div style="text-align: center">
-    <img src="img/logo.png">
+<body class="MainLeft">
+<div style="text-align: center;">
+    <input type="image" src="img/logo.png" onclick="window.parent.location.href='Main.html' ">
 </div>
 
-<div style="width: 100%;height: 10%;background-color: #000000;">
-    <h2>首页</h2>
+<div class="LeftNav" id="LeftNav" onmousemove="LeftNav()">
+    <a href="Login.html" target="content" style="text-decoration: none;"><h3>首页</h3></a>
 </div>
 
-<div style="width: 100%;height: 10%;background-color: #000000;">
-    <h2>首页</h2>
+<div class="LeftNav" id="LeftNav2" onmousemove="LeftNav()">
+    <a href="Login.html" target="content"><h3>首页</h3></a>
 </div>
+
 </body>
 </html>
