@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>动态操作表格</title>
+</head>
+
+<body>
+<input type="button" onclick="AddRow()" value="增加行">
+<input type="button" onclick="AddColumn()" value="增加列">
+<table id="table1" border=1 width=90% align=center>
+    <tr>
+        <td></td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+
+    <tr>
+        <td>GP001</td>
+        <td>1/1</td>
+        <td>1/2</td>
+        <td>1/3</td>
+        <td>1/4</td>
+        <td>1/5</td>
+        <td>1/6</td>
+    </tr>
+
+    <tr>
+        <td>GP001</td>
+        <td>1/1</td>
+        <td>1/2</td>
+        <td>1/3</td>
+        <td>1/4</td>
+        <td>1/5</td>
+        <td>1/6</td>
+    </tr>
+</table>
+<script language=javascript>
+
+    var obj = document.getElementById("table1");	//获取表格的ID
+    var dates = new Array("1/7", "1/8", "1/9", "1/10", "1/11", "1/12", "2/1", "2/2", "2/3");
+    var modenumber = new Array("GP001", "GP002", "GP003", "GP004", "GP005", "GP006", "GP007", "GP008", "GP009");
+    var Number = 5;
+    //增加行
+    function AddRow() {
+        var rowCount = obj.rows.length;
+        var cellCount = obj.rows[0].cells.length;
+        for (j = Number; j >= 0; j--) {
+            for (i = 0; i < 1; i++) {
+                var tRow = obj.insertRow(rowCount);
+                var tCell = tRow.insertCell(i);
+                tCell.innerHTML = (modenumber[j] );
+            }
+        }
+
+        for (j = 0; j < Number; j++) {
+            for (i = 0; i < cellCount; i++) {
+                var tRow = obj.insertRow(rowCount);
+                var tCell = tRow.insertCell(i);
+                tCell.innerHTML = (dates[j] );
+            }
+        }
+    }
+
+    //增加列
+    function AddColumn() {
+        var rowCount = obj.rows.length;
+        var cellCount = obj.rows[0].cells.length;
+        //控制每次增加的列数
+        for (j = Number; j > 0; j--) {
+            for (i = 0; i < 1; i++) {
+                var tRowhead = obj.rows[i];
+                var tCellhead = tRowhead.insertCell(cellCount);
+                tCellhead.innerHTML = ( cellCount + j - 1);
+            }
+        }
+        for (j = 1; j < Number + 1; j++) {
+            for (i = 1; i < rowCount; i++) {
+                var tRowbody = obj.rows[i];
+                var tCellbody = tRowbody.insertCell(cellCount);
+                if (dates[cellCount - j - 1] == null) {
+                    tCellbody.innerHTML = "";
+                } else
+                    tCellbody.innerHTML = (dates[cellCount - j - 1]);
+            }
+        }
+    }
+</script>
+</body>
+</html>
