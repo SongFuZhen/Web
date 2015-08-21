@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <!--link css-->
+    <link href="CSS/jquery-ui.min.css" type="text/css" rel="stylesheet">
+    <link href="CSS/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="CSS/normalize.css" type="text/css" rel="stylesheet">
+    <link href="CSS/main.css" type="text/css" rel="stylesheet">
+    <link href="CSS/theme.css" type="text/css" rel="stylesheet">
+    <!--link js-->
+    <script type="text/javascript" src="JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="JS/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JS/main.js"></script>
+</head>
+<body>
+<!--head Start-->
+<div class="navbar navbar-default" role="navigation">
+    <div class="navbar-inner">
+        <a class="navbar-brand" href="main.html">
+            <img alt="Charisma Logo" src="images/user.png" class="hidden-xs">
+            <span>BRILLIANTECH</span>
+        </a>
+
+        <div class="btn-group pull-right">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <!--user icon here-->
+                <i></i>
+                <span class="hidden-sm hidden-xs"> Admin</span>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li class="divider"></li>
+                <li><a href="mylogin.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--head End-->
+
+<!--Left Nav Start-->
+<div class="sidebar-nav">
+    <ul>
+        <li>
+            <a href="#" data-target=".dashboard-menu" class="nav-header"
+               data-toggle="collapse">
+                Home
+            </a>
+        </li>
+        <li>
+            <ul class="dashboard-menu nav nav-list collapse">
+                <li>
+                    <a onclick="jumpHome()">Home</a>
+                </li>
+                <li><a href="#" onclick="jump()"> Calendar</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#" data-target=".accounts-menu" class="nav-header collapsed"
+               data-toggle="collapse">
+                Account
+            </a>
+        </li>
+        <li>
+            <ul class="accounts-menu nav nav-list collapse">
+                <li><a href="#" onclick="jump()"><span class="fa fa-caret-right"></span> Sign In</a></li>
+                <li><a href="#" onclick="jump()"><span class="fa fa-caret-right"></span> Sign Up</a></li>
+                <li><a href="#" onclick="jump()"><span class="fa fa-caret-right"></span> Reset Password</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#" class="nav-header">Help</a>
+        </li>
+    </ul>
+</div>
+<!--Left Nav End-->
+
+<!--Content  Start-->
+<div id="mainBody" class="mainBody">
+    <h1 id="mainFont">Welcome , Login In</h1>
+</div>
+<!--Content End-->
+</body>
+</html>

@@ -1,0 +1,42 @@
+/*navbar start*/
+.navbar {
+    background-color: #5b6a87;
+}
+
+.navbar-inner > a {
+    display: inline-flex;
+}
+
+.navbar-brand > img {
+    width: 30px;
+    height: 30px;
+    margin: 0 20px 0 0;
+}
+
+.navbar-brand > span {
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.btn-group {
+    margin: 8px 10px 0 0;
+}
+
+/*navbar end*/
+
+/*Left navbar Start*/
+.sidebar-nav {
+    border: 1px solid #000;
+    height: 100%;
+}
+
+.nav > li {
+    margin-left: 10px;
+}
+
+.mainBody {
+    text-align: center;
+    margin-left: 250px;
+}
+
+/*Left navbar End*/
